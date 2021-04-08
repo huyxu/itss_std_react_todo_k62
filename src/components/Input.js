@@ -24,7 +24,6 @@ function Input({ onAdd }) {
         className="input" 
         type="text" 
         placeholder="Enter to add new item"
-        // value={text}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
       />
