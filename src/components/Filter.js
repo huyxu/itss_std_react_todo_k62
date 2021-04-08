@@ -15,17 +15,17 @@ function Filter({ onChange, value }) {
     <a
       href="#"
       onClick={handleClick.bind(null, "ALL")}
-      className={value === 'ALL' ? 'isActive' : ''}
+      className={value === 'ALL' ? 'is-active' : ''}
     >全て</a>
     <a
       href="#"
       onClick={handleClick.bind(null, "TODO")}
-      className={value === 'TODO' ? 'isActive' : ''}
+      className={value === 'TODO' ? 'is-active' : ''}
     >未完了</a>
     <a
       href="#"
       onClick={handleClick.bind(null, "DONE")}
-      className={value === 'DONE' ? 'isActive' : ''}
+      className={value === 'DONE' ? 'is-active' : ''}
     >完了済み</a>
     </div>
   );
