@@ -10,3 +10,21 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore().collection("todos");
+
+export const getTodoItems = () => {db.get()}
+
+export const addTodoItem = (item) => {
+    db.add(item);
+}
+
+export const updateTodoItem = (item, id) => {
+    db.doc(id).update(item);
+}
+
+export const removeTodoItem = (item) => {
+    db.doc(item.id).delete();
+}
+
+export default firebase;
